@@ -4,7 +4,7 @@
 #include <strings.h>
 
 PsychicResponse::PsychicResponse(PsychicRequest* request) : _request(request),
-                                                            _code(0),
+                                                            _code(200),
                                                             _status(""),
                                                             _contentType(""),
                                                             _contentLength(0),

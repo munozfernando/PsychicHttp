@@ -130,6 +130,12 @@ void PsychicFileResponse::_setContentTypeFromPath(const char* p)
     _contentType = "application/zip";
   else if (endsWith(p, ".gz"))
     _contentType = "application/x-gzip";
+  else if (endsWith(p, ".m3u8"))
+    _contentType = "aapplication/vnd.apple.mpegurl";
+  else if (endsWith(p, ".ts"))
+    _contentType = "video/mp2t";
+  else if (endsWith(p, ".webp"))
+    _contentType = "image/webp";
   else
     _contentType = "text/plain";
 
